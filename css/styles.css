@@ -208,6 +208,7 @@ li {
     background: var(#eeeeee);
     max-height: 0;
     opacity: 0;
+    z-index: -10; /* Para não ficar por cima do Form / evita erro de acesso aos inputs */
 
     transition: all 0.5s ease;
 }
