@@ -6,6 +6,7 @@
 
 :root {
     --white: #ffffff;
+    --white-100: #eeeeee;
 
     --purple-200: #8475A5;
     --purple-350: #5E3EAA;
@@ -152,6 +153,101 @@ li {
 }
 
 
+/* HEADER MOBILE */
+.header-mobile {
+    display: none;
+    flex-direction: column;
+
+}
+
+.header-mobile-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+    background: var(--purple-500);
+    padding: 2.25rem 0.5rem;
+}
+
+.header-mobile-button {
+    width: 70%;
+    padding: 0.60rem 1rem;
+    border-radius: 1.5rem;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.header-mobile-button-entrar {
+    border: 0;
+    background: var(--white);
+    color: var(--purple-350);
+}
+
+.header-mobile-button-cadastrese {
+    border: 1px solid var(--white);
+    color: var(--white);
+    background: transparent;
+}
+
+.header-mobile-navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem 1rem;
+    background: var(--purple-400);
+}
+
+.menu-button-mobile {
+    font-size: 2rem;
+}
+
+.nav-mobile {
+    background: var(#eeeeee);
+    max-height: 0;
+    opacity: 0;
+
+    transition: all 0.5s ease;
+}
+
+.nav-mobile.active {
+    padding: 3rem 0.4rem;
+    max-height: 500px;
+    height: auto;
+    opacity: 1;
+}
+
+.nav-mobile-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.8rem;
+
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--purple-400);
+}
+
+.nav-mobile-link {
+    position: relative;
+}
+
+.nav-mobile-link .nav-link-label {
+    background: var(--red-200);
+    color: var(--white);
+    border-radius: 1rem;
+    font-weight: 700;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.4rem;
+
+    position: absolute;
+    top: -60%;
+    right: -30%;
+}
+
+
 /* BANNER LOGIN SECTION */
 .banner-login {
     display: flex;
@@ -165,6 +261,8 @@ li {
 
 .banner-login-img {
     background: url(../images/login-key.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 4rem;
 }
 
@@ -296,7 +394,7 @@ li {
     gap: 1.25rem;
 }
 
-.info-about-tile, 
+.info-about-title, 
 .info-customer-service-title {
     font-size: 1.6rem;
 }
@@ -343,6 +441,62 @@ footer {
 
 footer img {
     width: 120px;
+}
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    /* HEADER */
+    .header {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+    }
+
+
+    /* FORM LOGIN */
+    .form-login-actions {
+        flex-direction: column;
+        gap: 1rem
+    }
+
+    .form-login-actions button {
+        width: 70%;
+    }
+
+
+    /* INFO */
+    .info {
+        padding: 7rem 2rem;
+        font-size: 1.15rem;
+    }
+
+    .info .container {
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .info-about, .info-customer-service {
+        gap: 1rem;
+    }
+
+    .info-about-title, 
+    .info-customer-service-title {
+        font-size: 1.9rem;
+        text-align: center;
+    }
+
+    .info-social-icons {
+        margin: 1.25rem auto 1.25rem 0;
+        font-size: 1.4rem;
+    }
+
+    .info-customer-service {
+        gap: 2rem;
+    }
 }
 
 

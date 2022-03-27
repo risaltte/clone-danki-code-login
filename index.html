@@ -10,7 +10,7 @@
     <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
     <title>Login - Dankcode</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/abef8dec75.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -35,6 +35,34 @@
                 <button class="nav-button nav-button-cadastrese">Cadastre-se Grátis</button>
             </div>
         </nav>
+    </header>
+
+    <header class="header-mobile">
+        <div class="header-mobile-buttons">
+            <button class="header-mobile-button header-mobile-button-entrar">Entrar</button>
+            <button class="header-mobile-button header-mobile-button-cadastrese">Cadastre-se Grátis</button>
+        </div>
+
+        <div class="header-mobile-navBar">
+            <h1>
+                <a href=""><img class="header-mobile-logo" src="./images/danki_header.png" alt="Logo Danki"></a>            
+            </h1>
+            
+            <i class="fa-solid fa-bars menu-button-mobile"></i>
+        </div>  
+
+        <nav class="nav-mobile">
+            <div class="nav-mobile-links">
+                <a class="nav-mobile-link" href="#">Home</a>
+                <a class="nav-mobile-link" href="#">Cursos</a>
+                <a class="nav-mobile-link" href="#">Plano Vitalício <span class="nav-link-label">inédito</span></a>
+                <a class="nav-mobile-link" href="#">Certificados</a>
+                <a class="nav-mobile-link" href="#">Marketplace</a>
+                <a class="nav-mobile-link" href="#">Fórum</a>
+                <a class="nav-mobile-link" href="#">Ensine</a>
+                <a class="nav-mobile-link" href="#">Blog</a>
+            </div>
+        </nav>      
     </header>
 
     <main>
@@ -73,7 +101,7 @@
         <section class="info">
             <div class="container">
                 <div class="info-about">
-                    <h2 class="info-about-tile">Sobre a Danki Code</h2>
+                    <h2 class="info-about-title">Sobre a Danki Code</h2>
                     <p class="info-about-text">
                         A Danki Code é uma empresa de desenvolvimento web e também atua na área de cursos online voltados também ao assunto. Sediada em Florianópolis, desenvolve soluções inovadoras para empresas e também forma profissionais capacitados e completos para a área de TI.
                     </p>
@@ -102,7 +130,7 @@
                     <h2 class="info-customer-service-title">Atendimento ao cliente</h2>
                     <p class="info-customer-service-text"><i class="fa-solid fa-envelope icon"></i> <strong>E-mail:</strong> atendimento@dankicode.com</p>
                     <p class="info-customer-service-text"><i class="fa-solid fa-phone icon"></i> <strong>Telefone/WhatsApp:</strong> (48) 99684-4281</p>
-                    <p class="info-customer-service-text"><i class="fa-solid fa-clock icon"></i> <strong>De segunda a domingo</p>
+                    <p class="info-customer-service-text"><i class="fa-solid fa-clock icon"></i> <strong>De segunda a domingo</strong></p>
                 </div>
             </div>
             
@@ -112,5 +140,8 @@
     <footer>
         <img src="./images/danki_logo.png" alt="Logo Danki">
     </footer>
+
+    <script src="./js/menuMobile.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
